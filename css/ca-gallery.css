@@ -850,3 +850,15 @@ fieldset[disabled] .btn-xl:hover {
 .dont-show {
   opacity: 0;
 }
+
+.modal-cont {
+  height: 100%;
+}
+
+.modal-body span {
+  font-size: 1.3rem;
+}
+
+.modal-body span:hover {
+  background-color: #b9e0ff;
+}

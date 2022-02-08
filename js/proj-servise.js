@@ -123,7 +123,7 @@ function renderModals() {
                   <li>Category: ${proj.labels.join(", ")}</li>
                   <li><a href=${
                     proj.url
-                  } target="_blank">Enjoy the app experience</a></li>
+                  } target="_blank"><span>Enjoy the app experience</span></a></li>
                 </ul>
                 <button
                   class="btn btn-primary"
@@ -143,7 +143,13 @@ function renderModals() {
   });
 
   var allStr = str.join(",");
-  document.querySelector(".overlay").insertAdjacentHTML("beforebegin", allStr);
+
+  $(".modal-cont").html(allStr);
+  $(".modal-cont").removeClass("hidden");
+
+  document
+    .querySelector(".overlay-2")
+    .insertAdjacentHTML("beforebegin", allStr);
 }
 
 function onContactMe() {
